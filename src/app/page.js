@@ -7,7 +7,7 @@ export default function Home() {
       <div className="wiki-article-content">
         <div className="wiki-article-image">
           {/* Placeholder for the image; replace with your own */}
-          <Image src="/image.jpg" alt="Mama Raised No Bitch" width={300} height={300} />
+          <Image src="/nobitch.png" alt="Mama Raised No Bitch" width={250} height={300} />
           <p className="wiki-image-caption">An embodiment of resilience and determination.</p>
         </div>
         <div className="wiki-article-text">
