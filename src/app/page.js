@@ -55,7 +55,7 @@ export default function Home() {
           Get in touch now and make <em>MamaRaisedNoBitch.com</em> your own. Because in this world, only the bold make history.
         </p>
         <p className="sales-pitch-text">
-          For inquiries, offers, or to grab this exclusive domain, <a href="mailto:info@mamaraisednobitch.com" className="sales-pitch-email">email us now</a> and make your mark.
+          For inquiries, offers, or to grab this exclusive domain, <a href="mailto:jblow3799@gmail.com" className="sales-pitch-email">email us now</a> and make your mark.
         </p>
       </div>
     </div>
