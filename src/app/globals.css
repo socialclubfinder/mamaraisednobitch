@@ -1,33 +1,182 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* globals.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for the entire page */
+.wiki-article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.wiki-article-title {
+  font-size: 2.4em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Content styles */
+.wiki-article-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wiki-article-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.wiki-image-caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+}
+
+.wiki-article-text {
+  flex: 2 1 600px;
+}
+
+/* Ad banner styling */
+.ad-banner-container {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-banner-container a {
+  display: block;
+  max-width: 100%;
+}
+
+.ad-banner-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sales pitch container styling */
+.sales-pitch-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff3e6;
+  border: 2px solid #ff8c00;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sales-pitch-title {
+  font-size: 1.8em;
+  color: #ff8c00;
+  margin-bottom: 10px;
+}
+
+.sales-pitch-text {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.sales-pitch-text strong {
+  color: #ff4500;
+}
+
+.sales-pitch-text em {
+  color: #ff8c00;
+}
+
+.sales-pitch-email {
+  color: #ff4500;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sales-pitch-email:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .wiki-article-content {
+    flex-direction: column;
+  }
+
+  .wiki-article-image {
+    margin-bottom: 20px;
+  }
+
+  .wiki-article-title {
+    font-size: 2em;
+  }
+
+  .wiki-article-text {
+    font-size: 1em;
+  }
+
+  .ad-banner-container {
+    padding: 15px;
+  }
+
+  .sales-pitch-container {
+    padding: 15px;
+  }
+
+  .sales-pitch-title {
+    font-size: 1.6em;
+  }
+
+  .sales-pitch-text {
+    font-size: 1em;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@media (max-width: 480px) {
+  .wiki-article-title {
+    font-size: 1.6em;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .wiki-article-text {
+    font-size: 0.9em;
+  }
+
+  .ad-banner-container {
+    padding: 10px;
+  }
+
+  .sales-pitch-container {
+    padding: 10px;
+  }
+
+  .sales-pitch-title {
+    font-size: 1.4em;
+  }
+
+  .sales-pitch-text {
+    font-size: 0.9em;
   }
 }

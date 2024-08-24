@@ -2,112 +2,62 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="wiki-article-container">
+      <h1 className="wiki-article-title">MamaRaisedNoBitch</h1>
+      <div className="wiki-article-content">
+        <div className="wiki-article-image">
+          {/* Placeholder for the image; replace with your own */}
+          <Image src="/image.jpg" alt="Mama Raised No Bitch" width={300} height={300} />
+          <p className="wiki-image-caption">An embodiment of resilience and determination.</p>
+        </div>
+        <div className="wiki-article-text">
+          <p>
+            <strong>Mama Raised No Bitch</strong> is a popular urban slang expression that has gained significant traction in modern culture. 
+            It's more than just a phrase—it's a badge of honor, a declaration of strength, and a testament to one's upbringing. 
+            The saying encapsulates the idea that a person, usually raised by a strong maternal figure, has been taught to stand tall 
+            in the face of adversity, to not back down from challenges, and to maintain their dignity no matter the circumstances.
+          </p>
+          <p>
+            This expression is often used to emphasize toughness and resilience. It suggests that the individual has been brought up 
+            with a strong sense of self-worth and determination, qualities that are essential for overcoming life's obstacles. 
+            The phrase can be seen as a rallying cry, a way to remind oneself and others that giving up is not an option. 
+            In the world of urban slang, <strong>Mama Raised No Bitch</strong> is the ultimate retort to anyone questioning one’s resolve.
+          </p>
+          <p>
+            The phrase is also a statement of pride, celebrating the strength and influence of one’s mother or parental figure. 
+            It reflects the lessons learned from a nurturing but no-nonsense upbringing, where the values of courage, perseverance, 
+            and fortitude are deeply ingrained. In essence, if someone says "Mama Raised No Bitch," they’re asserting that they have 
+            been taught to be a winner, not a quitter.
+          </p>
+          <p>
+            <em>MamaRaisedNoBitch.com</em> is the definitive destination for those who live by this creed, providing inspiration, 
+            motivation, and a community of like-minded individuals who proudly carry forward the lessons their "mama" instilled in them.
+          </p>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+      <div className="ad-banner-container">
+        <a href="https://stake.com/?c=XhYNip7W" target="_blank" rel="noopener noreferrer">
+          {/* Replace 'ad-banner.gif' with the actual filename if different */}
+          <Image src="/Stake_Casino_728x90.gif" alt="Stake.com" width={728} height={90} layout="intrinsic" />
         </a>
       </div>
-    </main>
+      <div className="sales-pitch-container">
+        <h2 className="sales-pitch-title">Exclusive Opportunity: Own MamaRaisedNoBitch.com</h2>
+        <p className="sales-pitch-text">
+          <strong>Attention, Visionaries and Game-Changers!</strong> Are you ready to own a domain that's as bold and audacious as you are? 
+          <strong>MamaRaisedNoBitch.com</strong> isn't just a domain—it's a statement. It's your chance to make waves, stand out, and show 
+          the world that you’re not here to play it safe. This domain is for those who have the courage to embrace their true selves, 
+          who are unafraid to flaunt their strength and resilience.
+        </p>
+        <p className="sales-pitch-text">
+          Don’t be just another name in the crowd. <strong>Be the person who had the guts to seize this opportunity.</strong> 
+          If you’ve got the vision and the drive, <strong>this domain is your golden ticket to making a real impact.</strong> 
+          Get in touch now and make <em>MamaRaisedNoBitch.com</em> your own. Because in this world, only the bold make history.
+        </p>
+        <p className="sales-pitch-text">
+          For inquiries, offers, or to grab this exclusive domain, <a href="mailto:info@mamaraisednobitch.com" className="sales-pitch-email">email us now</a> and make your mark.
+        </p>
+      </div>
+    </div>
   );
 }
